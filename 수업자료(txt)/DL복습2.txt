@@ -1,0 +1,27 @@
+### 신경망 구조 설계
+
+1. 뼈대
+2. 입력층 - 입력 모양을 잡아주는 역할
+3. 은닉층
+	- 활성화 함수 : 역치
+	- ReLU 계열이 현재 많이 사용됨
+4. 출력층 
+	- 활성화 함수 : 출력 모양을 잡아주는 역할
+	- 회귀 : 1ea, linear(기본값)
+	- 이진 : 1ea, sigmoid
+	- 다중 : 클래스 개수만큼, softmax
+
+### 학습 방법 설정
+
+- 회귀 : 평균제곱오차(mean_squared_error), mse
+- 이진 : binary_crossentropy, accuracy
+- 다중 : categorical_crossentropy, accuracy
+
+### 최적화 함수
+
+- 순전파(예측) 이후 나온 예측값과 실제값간의 차이(오차)의 정도를 반영하여, w와 b값을 최적화 시켜주는 함수
+- adam : Momentum(관성을 이용) + Adagrad(방향)
+
+### Back Propagation(오차역전파)
+
+- 순전파(예측) -> 오차계산 -> 역전파(학습)순으로 연산량을 효율적으로 감소한 방법론
