@@ -1,0 +1,31 @@
+
+# 데이터 파일 및 폴더 제외
+data/
+
+# 모델 가중치 파일 제외
+*.pt
+*.pth
+*.h5
+*.weights
+
+# 학습 결과 폴더 제외 (Ultralytics 기본 경로)
+runs/
+
+# 로그 파일 제외
+*.log
+
+# 캐시 파일 및 파이썬 컴파일 파일 제외
+__pycache__/
+*.pyc
+
+# Jupyter Notebook 체크포인트 제외
+.ipynb_checkpoints/
+
+# 운영체제 및 IDE 관련 파일 제외
+.DS_Store
+.vscode/
+*.iml
+
+# 기타 임시 파일 등
+*.tmp
+*~
