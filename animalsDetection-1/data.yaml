@@ -1,0 +1,13 @@
+train: /content/drive/MyDrive/Colab Notebooks/esgc/animalsDetection-1/train
+val: /content/drive/MyDrive/Colab Notebooks/esgc/animalsDetection-1/valid
+test: /content/drive/MyDrive/Colab Notebooks/esgc/animalsDetection-1/test
+
+nc: 2
+names: ['butterfly', 'sheep']
+
+roboflow:
+  workspace: yunni
+  project: animalsdetection-veo9w
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/yunni/animalsdetection-veo9w/dataset/1
